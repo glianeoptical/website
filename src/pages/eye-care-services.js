@@ -1,16 +1,16 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import colorBlind from "../images/color_blind_eye_exam.png"
-import eyeCare from "./../images/eye-care.jpg"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import colorBlind from '../images/color_blind_eye_exam.png';
+import eyeCare from './../images/eye-care.jpg';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const SecondPage = () => (
   <Layout>
     <SEO title="Eye Care Services" />
     <div className="eye-care-banner">
-      <h1>Eye Care Services</h1>
+      <h1 className="yellow-text">Eye Care Services</h1>
     </div>
 
     <ul className="bullet">
@@ -85,6 +85,6 @@ const SecondPage = () => (
       </li>
     </ul>
   </Layout>
-)
+);
 
-export default SecondPage
+export default SecondPage;

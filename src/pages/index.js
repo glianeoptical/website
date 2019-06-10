@@ -1,16 +1,16 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Slider from "react-slick"
+import Slider from 'react-slick';
 
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import daughters from "../images/daughters.png"
-import family from "../images/family.png"
-import sons from "../images/sons.png"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import daughters from '../images/daughters.png';
+import family from '../images/family.png';
+import sons from '../images/sons.png';
 
 const IndexPage = () => {
   const SLIDER_SETTINGS = {
@@ -22,17 +22,17 @@ const IndexPage = () => {
     autoplay: false,
     autoplaySpeed: 5000,
     showArrows: false,
-    cssEase: "linear",
-  }
+    cssEase: 'linear'
+  };
 
   return (
     <Layout>
       <SEO title="Home - Gliane Optical" />
-      <div style={{ margin: "0 auto", width: "90%" }}>
+      <div style={{ margin: '0 auto', width: '90%' }}>
         <div className="carousel-container">
           <Slider {...SLIDER_SETTINGS}>
             <div className="carousel">
-              <h2 className="carousel-header">
+              <h2 className="carousel-header green-text">
                 Experience Comprehensive High Level Eye Care
               </h2>
               <div className="carousel-content">
@@ -50,7 +50,10 @@ const IndexPage = () => {
                       </a>
                     </div>
                     <div className="contact">
-                      <em>Or give us a call</em> <strong>0917-620-4759</strong>
+                      <em>Or give us a call</em>
+                      <p className="contact-number">
+                        <strong>0917-620-4759</strong>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -58,7 +61,7 @@ const IndexPage = () => {
                 <img
                   src={daughters}
                   className="banner"
-                  style={{ height: "80%" }}
+                  style={{ height: '80%' }}
                 />
               </div>
             </div>
@@ -78,12 +81,15 @@ const IndexPage = () => {
                       </a>
                     </div>
                     <div class="contact">
-                      <em>Or give us a call</em> <strong>0917-620-4759</strong>
+                      <em>Or give us a call</em>
+                      <p className="contact-number">
+                        <strong>0917-620-4759</strong>
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                <img src={sons} className="banner" style={{ height: "80%" }} />
+                <img src={sons} className="banner" style={{ height: '80%' }} />
               </div>
             </div>
             <div className="carousel">
@@ -94,7 +100,7 @@ const IndexPage = () => {
                 <img
                   src={family}
                   className="banner"
-                  style={{ height: "80%" }}
+                  style={{ height: '80%' }}
                 />
                 <div className="carousel-text-left">
                   <div>
@@ -114,7 +120,10 @@ const IndexPage = () => {
                   </div>
 
                   <div class="contact">
-                    <em>Or give us a call</em> <strong>0917-620-4759</strong>
+                    <em>Or give us a call</em>
+                    <p className="contact-number">
+                      <strong>0917-620-4759</strong>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -143,7 +152,7 @@ const IndexPage = () => {
         </p>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

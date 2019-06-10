@@ -1,5 +1,5 @@
-import React from "react"
-import { Container } from "./style"
+import React from 'react';
+import { Container } from './style';
 
 const SearchIcon = props => (
   <Container {...props}>
@@ -28,11 +28,11 @@ const SearchIcon = props => (
       </g>
     </svg>
   </Container>
-)
+);
 
 SearchIcon.defaultProps = {
-  width: "10rem",
-  height: "5rem",
-}
+  width: '6rem',
+  height: '3rem'
+};
 
-export default SearchIcon
+export default SearchIcon;

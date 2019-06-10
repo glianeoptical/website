@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,7 +19,7 @@ div {
   font-size: 1rem;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -114,7 +114,7 @@ a {
 }
 
 .eye-care-banner {
-  background-image: url("../images/eye-care.jpg");
+  background-image: url('../images/eye-care.jpg');
   background-clip: content-box;
   background-size: cover;
   background-position: center;
@@ -127,7 +127,7 @@ a {
 }
 
 .laboratory-banner {
-  background-image: url("../images/laboratory.jpg");
+  background-image: url('../images/laboratory.jpg');
   background-clip: content-box;
   background-size: cover;
   background-position: center;
@@ -180,6 +180,14 @@ a {
 .green {
   background-color: #12582f;
 }
+
+.green-text {
+  color: #12582f;
+}
+
+.yellow-text {
+  color: #ffa502;
+}
 .blue {
   background-color: #2980b9;
 }
@@ -188,6 +196,9 @@ a {
   margin-top: 2rem;
 }
 
+.contact-number {
+  font-size: 2rem;
+}
 div.logo {
   font-size: 2.5rem;
   color: #092352;
