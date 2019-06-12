@@ -1,13 +1,26 @@
+let activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development';
+
+require('dotenv').config({
+  path: `.env.${activeEnv}`
+});
+
+console.log(
+  `Using environment config: '${activeEnv}' - ${process.env.GOOGLE_MAP_API}`
+);
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`
+    title: `Gliane Optical`,
+    description: `Gliane Optical`,
+    author: `rbanate`,
+    apiKey: process.env.GOOGLE_MAP_API
   },
   pathPrefix: '/glianeoptical',
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

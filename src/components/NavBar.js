@@ -12,11 +12,10 @@ export default class Navbar extends Component {
   };
 
   render() {
-    const {
-      location: { pathname }
-    } = this.props;
+    const { location } = this.props;
 
-    const path = pathname ? pathname.toLowerCase() : undefined;
+    const path =
+      location && location.pathname ? location.pathname.toLowerCase() : '/';
 
     return (
       <>
