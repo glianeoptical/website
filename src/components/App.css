@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f2f2f2;
+  background-color: rgb(244, 245, 247);
   font-size: 62.5%;
   box-sizing: border-box;
   outline: none;
@@ -22,9 +22,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+img {
+  width: 100%;
+}
 
-a {
+ul ul {
+  margin-left: 2rem;
+}
+
+ul.left-padded {
+  padding-left: 2rem;
+}
+
+a,
+a:visited {
   text-decoration: none;
+  color: #092352;
 }
 :root {
   --off-white: #fafafa;
@@ -64,6 +77,10 @@ a {
   color: #333;
 }
 
+a.selected {
+  border-bottom: 3px solid #ffa502;
+}
+
 .nav-item:hover {
   color: black;
   cursor: pointer;
@@ -83,10 +100,19 @@ a {
 .carousel-container {
   margin: 1rem auto;
   margin-bottom: 4rem;
+  width: 95%;
 }
-.carousel {
+
+.landing-carousel {
+  height: 500px;
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+
+.contact-carousel {
   max-height: 500px;
   max-width: 800px;
+  padding: 1rem;
 }
 
 .carousel-header {
@@ -109,7 +135,7 @@ a {
 }
 
 .separator {
-  border-top: 1px solid #333;
+  /* border-top: 1px solid #333; */
   margin-top: 3rem;
 }
 
@@ -119,11 +145,19 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 150px;
+  margin-bottom: 2rem;
+  height: 100px;
 }
 
 .eye-care-banner > h1 {
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.eye-care-banner > p {
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .laboratory-banner {
@@ -132,26 +166,72 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 150px;
+  height: 100px;
   margin-bottom: 2rem;
 }
 
 .laboratory-banner > h1 {
   padding: 1rem;
-  color: #f2f2f2;
+  color: orangered;
+}
+
+.contact-us-banner {
+  background-image: url('../images/map.jpg');
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100px;
+  margin-bottom: 2rem;
+}
+
+.contact-us-banner > h1 {
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+  padding-left: 1rem;
+}
+.contact-us-banner > p {
+  padding: 0 1rem;
+  font-size: 1.4rem;
+  margin-top: 0;
 }
 
 .branch {
-  border-bottom: 1px solid #333;
+  min-height: 32rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(228, 231, 235);
+  padding: 1rem;
+  background-color: #fff;
   display: flex;
+  margin-bottom: 1rem;
+
+  box-shadow: rgba(231, 233, 236, 0.8) 0px 3px 6px 0px,
+    rgba(231, 233, 236, 0.6) 0px 1px 4px 0px;
+}
+.page {
+  min-height: 32rem;
+  border: none 1px;
+  border-style: solid;
+  border-color: rgb(228, 231, 235);
+  padding: 1rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  box-shadow: rgba(231, 233, 236, 0.8) 0px 3px 6px 0px,
+    rgba(231, 233, 236, 0.6) 0px 1px 4px 0px;
 }
 
 .branch > div.content {
   width: 30%;
 }
+.branch > div.content > h4 {
+  font-size: 2rem;
+}
 .branch > div.content > p {
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
 }
 
 .branch > div.images {
@@ -162,6 +242,10 @@ a {
   max-height: 300px;
   width: 100%;
   padding: 1rem;
+}
+
+.branch > div.images > div > div.carousel-slider {
+  height: 500px;
 }
 
 .appointment {
@@ -188,6 +272,9 @@ a {
 .yellow-text {
   color: #ffa502;
 }
+.red-text {
+  color: orangered;
+}
 .blue {
   background-color: #2980b9;
 }
@@ -210,8 +297,9 @@ div.logo {
 
 .about-us-images {
   display: flex;
+  flex-direction: row;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
 }
 
 .about-us-images > img {
@@ -220,10 +308,91 @@ div.logo {
   padding: 1rem;
 }
 
+.about-us-images > img.smaller {
+  width: 50%;
+  height: 500px;
+}
+
 .values > h5 > span.bigger {
   font-size: 1.5rem;
 }
 .values > h5 > span.content {
   font-weight: normal;
   font-size: 1rem;
+}
+
+p.phone {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.header {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 0;
+}
+
+@media all and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .page {
+    padding: 2rem 0.5rem;
+  }
+  .header {
+    padding-top: 1.45rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .carousel-header {
+    font-size: 1.8rem;
+  }
+
+  .carousel-text-left {
+    padding: 1rem 0;
+  }
+
+  .appointment {
+    margin: 1rem 0;
+  }
+
+  .landing-carousel {
+    height: 100%;
+  }
+
+  .carousel-content {
+    display: block;
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+  .about-us-images {
+    flex-direction: column;
+  }
+
+  .about-us-images {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .branch {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .branch > div.content {
+    width: 100%;
+  }
+
+  .branch > div.images {
+    width: 100%;
+  }
+  .about-us-images > img.smaller {
+    width: 100%;
+  }
+  p {
+    margin: 0.5rem 0;
+  }
 }

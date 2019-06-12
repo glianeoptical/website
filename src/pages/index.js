@@ -12,7 +12,7 @@ import daughters from '../images/daughters.png';
 import family from '../images/family.png';
 import sons from '../images/sons.png';
 
-const IndexPage = () => {
+const IndexPage = props => {
   const SLIDER_SETTINGS = {
     dots: true,
     infinite: true,
@@ -26,12 +26,14 @@ const IndexPage = () => {
   };
 
   return (
-    <Layout>
+    <Layout location={props.location}>
       <SEO title="Home - Gliane Optical" />
-      <div style={{ margin: '0 auto', width: '90%' }}>
+      {/* <div className="page-content"> */}
+      <div className="page">
+        {/* <div style={{ margin: '0 auto', width: '90%' }}> */}
         <div className="carousel-container">
           <Slider {...SLIDER_SETTINGS}>
-            <div className="carousel">
+            <div className="landing-carousel">
               <h2 className="carousel-header green-text">
                 Experience Comprehensive High Level Eye Care
               </h2>
@@ -58,14 +60,10 @@ const IndexPage = () => {
                   </div>
                 </div>
 
-                <img
-                  src={daughters}
-                  className="banner"
-                  style={{ height: '80%' }}
-                />
+                <img src={daughters} className="banner" />
               </div>
             </div>
-            <div className="carousel">
+            <div className="landing-carousel">
               <h2 className="carousel-header">Protection for young eyes</h2>
               <div className="carousel-content">
                 <div>
@@ -92,7 +90,7 @@ const IndexPage = () => {
                 <img src={sons} className="banner" style={{ height: '80%' }} />
               </div>
             </div>
-            <div className="carousel">
+            <div className="landing-carousel">
               <h2 className="carousel-header centered">
                 Eye Care for your whole family
               </h2>
@@ -151,6 +149,8 @@ const IndexPage = () => {
           and treat our patient like a family.
         </p>
       </div>
+      {/* </div> */}
+      {/* </div> */}
     </Layout>
   );
 };
