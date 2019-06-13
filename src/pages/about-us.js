@@ -105,7 +105,7 @@ const AboutUs = props => (
         </div>
         <div className="values">
           <h5>
-            <span className="bigger">E</span>QUALITY-{' '}
+            <span className="bigger">E</span>QUALITY -{' '}
             <span className="content">
               We provide care equal to all people that does not vary in quantity
               because of personal characteristics such as gender, ethnicity,
@@ -113,8 +113,12 @@ const AboutUs = props => (
             </span>
           </h5>
         </div>
-        <h4>TAG LINE</h4>
-        <p className="pushed">G.O for better vision</p>
+        <div className="values">
+          <h5>
+            <span className="bigger">T</span>AG LINE -{' '}
+            <span className="content">GO for better vision</span>
+          </h5>
+        </div>
       </div>
     </div>
   </Layout>

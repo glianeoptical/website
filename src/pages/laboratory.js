@@ -20,6 +20,12 @@ import dri4 from '../images/frames/dri4.jpg';
 import lense1 from '../images/lenses/1.jpg';
 import lense2 from '../images/lenses/2.jpg';
 
+import lab1 from '../images/laboratory/1.jpg';
+import lab2 from '../images/laboratory/2.jpg';
+import lab3 from '../images/laboratory/3.jpg';
+import lab4 from '../images/laboratory/4.jpg';
+import lab6 from '../images/laboratory/6.jpg';
+import lab7 from '../images/laboratory/7.jpg';
 class Laboratory extends React.PureComponent {
   render() {
     return (
@@ -39,7 +45,17 @@ class Laboratory extends React.PureComponent {
               price possible. Rest assured that both you and your patients are
               in good hands with GH Optical Laboratory.
             </p>
-
+            <p>&nbsp;</p>
+            <Carousel showArrows={true}>
+              <img src={lab1} alt="" />
+              <img src={lab2} alt="" />
+              <img src={lab3} alt="" />
+              <img src={lab4} alt="" />
+              <img src={lab6} alt="" />
+              <img src={lab7} alt="" />
+            </Carousel>
+            <h2>Lenses</h2>
+            <p>&nbsp;</p>
             <p>We distribute wide variety of optical lenses such as:</p>
             <ul className="left-padded">
               <li>Single Vision Ordinary</li>
@@ -51,7 +67,7 @@ class Laboratory extends React.PureComponent {
               <li>Flat top-UC</li>
               <li>Progressive-UC, MC and Transition</li>
             </ul>
-
+            <p>&nbsp;</p>
             <p>
               We distribute lenses and frame nationwide and abroad. We also
               offer bulk orders, online services and deliver orders the same
@@ -59,7 +75,7 @@ class Laboratory extends React.PureComponent {
               <strong>09268752003</strong> or click <a href="#">here</a> to send
               us a message.
             </p>
-            <h4>Lense Images</h4>
+            <h3>Lense Images</h3>
             <Carousel showArrows={true}>
               <div>
                 <img src={lense1} alt="" />

@@ -18,6 +18,9 @@ p,
 div {
   font-size: 1rem;
 }
+p {
+  margin: 1rem 0;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

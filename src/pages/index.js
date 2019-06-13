@@ -47,14 +47,19 @@ const IndexPage = props => {
                   </p>
                   <div className="appointment">
                     <div>
-                      <a hre="#" className="button">
+                      <a
+                        href="mailto:gliane_optical_clinic@yahoo.com"
+                        className="button"
+                      >
                         Request Appointment
                       </a>
                     </div>
                     <div className="contact">
                       <em>Or give us a call</em>
                       <p className="contact-number">
-                        <strong>0917-620-4759</strong>
+                        <strong>
+                          <a href="tel:09176204759">(0917) 620-4759</a>
+                        </strong>
                       </p>
                     </div>
                   </div>
@@ -74,14 +79,19 @@ const IndexPage = props => {
                   </p>
                   <div className="appointment">
                     <div>
-                      <a hre="#" className="button blue">
+                      <a
+                        href="mailto:gliane_optical_clinic@yahoo.com"
+                        className="button blue"
+                      >
                         Request Appointment
                       </a>
                     </div>
                     <div class="contact">
                       <em>Or give us a call</em>
                       <p className="contact-number">
-                        <strong>0917-620-4759</strong>
+                        <strong>
+                          <a href="tel:09176204759">(0917) 620-4759</a>
+                        </strong>
                       </p>
                     </div>
                   </div>
@@ -110,8 +120,12 @@ const IndexPage = props => {
                       A great eye care begins with regular eye check-up. Call us
                       now.
                     </p>
+                    <p>&nbsp;</p>
                     <div className="appointment">
-                      <a hre="#" className="button green">
+                      <a
+                        href="mailto:gliane_optical_clinic@yahoo.com"
+                        className="button green"
+                      >
                         Request Appointment
                       </a>
                     </div>
@@ -120,7 +134,9 @@ const IndexPage = props => {
                   <div class="contact">
                     <em>Or give us a call</em>
                     <p className="contact-number">
-                      <strong>0917-620-4759</strong>
+                      <strong>
+                        <a href="tel:09176204759">(0917) 620-4759</a>
+                      </strong>
                     </p>
                   </div>
                 </div>

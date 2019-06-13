@@ -25,7 +25,7 @@ const Map = ({ lat, lng, text }) => (
       return (
         <>
           {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-          <div style={{ height: '400px', width: '95%', marginBottom: '1rem' }}>
+          <div style={{ height: '445px', width: '95%', marginBottom: '1rem' }}>
             <GoogleMapReact
               bootstrapURLKeys={{
                 key: data.site.siteMetadata.apiKey

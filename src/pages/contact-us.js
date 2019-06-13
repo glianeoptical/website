@@ -27,6 +27,8 @@ import lu3 from '../images/branches/lu-3.jpg';
 
 import Map from '../components/Map';
 
+import PhoneIcon from '../components/icons/phone';
+
 const SecondPage = props => (
   <Layout location={props.location}>
     <SEO title="Contact Us" />
@@ -40,7 +42,9 @@ const SecondPage = props => (
         <h4>FTI Hypermaket Taguig</h4>
         <p>FTI Hypermaket Taguig</p>
         <p>Monday to Sunday 9:00am to 9:00pm</p>
-        <p className="phone">(0917) 115-5706</p>
+        <p className="phone">
+          <a href="tel:09171155706">(0917) 115-5706</a>
+        </p>
         <Map lat={14.50237} lng={121.04357} text="FTI Hypermaket Taguig" />
       </div>
       <div className="images">
@@ -57,7 +61,9 @@ const SecondPage = props => (
           Savemore Market Town Center Acacia Estates Brgy, Taguig, Metro Manila
         </p>
         <p>Monday to Sunday 9:00am to 9:00pm</p>
-        <p className="phone">(0917) 354-5951</p>
+        <p className="phone">
+          <a href="tel:3545951">(0917) 354-5951</a>
+        </p>
         <Map
           lat={14.47816}
           lng={121.05721}
@@ -74,9 +80,11 @@ const SecondPage = props => (
     <div className="branch">
       <div className="content">
         <h4>M.L Quezon St. Taguig</h4>
-        <p>6 M. L. Quezon Avenue, Taguig, 1632 Metro Manila</p>
+        <p>4 M. L. Quezon Avenue, Taguig, 1632 Metro Manila</p>
         <p>Monday to Saturday 9:00am to 7:30pm</p>
-        <p className="phone">(0917) 620-4759</p>
+        <p className="phone">
+          <a href="tel:09176204759">(0917) 620-4759</a>
+        </p>
         <Map lat={14.48855} lng={121.06086} text="M.L Quezon St. Taguig" />
       </div>
       <div className="images">
@@ -95,7 +103,9 @@ const SecondPage = props => (
           2<sup>nd</sup> floor. Morcilla St, Pateros, 1621 Metro Manila
         </p>
         <p>Monday to Saturday 9:00am to 7:30pm</p>
-        <p className="phone">(0917) 824-0213</p>
+        <p className="phone">
+          <a href="tel:09178240213">(0917) 824-0213</a>
+        </p>
         <Map lat={14.54418} lng={121.06837} text="Morcilla Arcade Pateros" />
       </div>
       <div className="images">
@@ -112,7 +122,9 @@ const SecondPage = props => (
         <h4>Luna La Union</h4>
         <p>Zambrano Bldg., Salcedo Luna, La Union (beside Municipal Hall)</p>
         <p>Monday to Saturday 8:00am to 6:00pm</p>
-        <p className="phone">(0096) 6894-5077</p>
+        <p className="phone">
+          <a href="tel:009668945077">(0096) 6894-5077</a>
+        </p>
         <Map lat={16.84669} lng={120.38335} text="Luna La Union" />
       </div>
       <div className="images">
